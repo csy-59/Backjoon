@@ -3,6 +3,7 @@
 #include <cmath>
 using namespace std;
 
+//자료형 범위를 제대로 보자
 int main()
 {	
 	printf("%d", 5/ 2);
