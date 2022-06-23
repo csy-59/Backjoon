@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\미완">
+      <UniqueIdentifier>{09f171a9-c4fe-4ba4-8b26-208233d74dba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2750_수 정렬하기%28220621%29.cpp">
@@ -48,9 +51,6 @@
     <ClCompile Include="10815_숫자 카드(220622).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14425 문자열 집합%28220622%29_미완.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="2477_참외밭(220622).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -65,6 +65,39 @@
     </ClCompile>
     <ClCompile Include="17298_오큰수%28220622%29.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5086_배수와 약수(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2609_최대공약수와 최소공배수(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1934_최소공배수(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14425 문자열 집합%28220622%29_미완.cpp">
+      <Filter>소스 파일\미완</Filter>
+    </ClCompile>
+    <ClCompile Include="2981_검문%28220623%29_미완.cpp">
+      <Filter>소스 파일\미완</Filter>
+    </ClCompile>
+    <ClCompile Include="3036_링(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11050_이항 계수1(220623)_.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11051_이항 계수2%28220623%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_다리 놓기(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9375_패션왕 신해빈(220623).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18258_큐 2%28220623%29_미완.cpp">
+      <Filter>소스 파일\미완</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
