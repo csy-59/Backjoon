@@ -32,62 +32,103 @@
 //	>> a = b*q + r 인 경우, gcd(a, b) == gcd(b,r) 이다(*gcd는 최대공약수를 의미)
 //	>> ex. 12345 = 1234*10 + 5, 1234 = 5*246 + 4, 5 = 4*1 + 1; 4 = 1 * 4 + 0
 //			gcd(12345, 1234) == gcd(1234, 5) = gcd(5,1) = gcd(1,0) = 1
+// 
+// [4번 알고리즘]
+// -신-께서 도와주셨다...
+// > 입력이 4개 A B C D(최소값)가 있다면
+// > q(a)+r / q(b)+r / q(c)+r / q(d)+r 이라는 의미이다.
+// > 즉, 모든 값의 차이는 다음과 같게 된다.
+//		q(a-b) , a(b-c), a(c-d), q(a-c), q(b-d), q(a-d), ...
+//		으로 결국 모든 값의 공약수를 모두 출력하면 된다.
+// 
+// ## 풀의 후기
+// >> 응~ 다시는 안풀어~ 수학 검나 못해~~
+// >> 장난이고 진짜 수학 죽어라 해야겠다는 생각이 들었다.
+// >> 솔직히 환님이 한번에 푸는 거 보고 약간 인생의 회의감이...
+// >> 나도 수학 천제되고 싶다 엉엉...
+// >> 세상에서 수학하고 한문하고 중국어 잘하는 사람 제일 신기해ㅣ....
 //
 
 #include <stdio.h>
 #include <vector>
+#include <cmath>
+#include <algorithm>
 
-bool result[500000001] = { false };
+long gcd(int a, int b)
+{
+	if (b == 1 || b == 0)
+	{
+		return a;
+	}
+
+	if (a % b == 0)
+	{
+		return b;
+	}
+
+	return gcd(b, a % b);
+}
+
 int main()
 {
 	int n;
 	scanf_s("%d", &n); 
 
 	std::vector<long> nums;
-	long temp, max = 0;
+	long temp;
 	for (int i = 0; i < n; ++i)
 	{
 		scanf_s("%ld", &temp);
 		nums.push_back(temp);
-
-		if (temp > max)
-		{
-			max = temp;
-		}
 	}
 
-	for (int i = max / 2 + 1; i > 0; --i)
+	long min = 1000000001, max = -1;
+	for (int i = 0; i < n - 1; ++i)
 	{
-		if (result[i] == true)
+		for (int j = i + 1; j < n; ++j)
 		{
-			continue;
-		}
-
-		bool isM = true;
-		long left = nums[0] % i;
-
-		for (auto iter = ++nums.begin(); iter != nums.end(); ++iter)
-		{
-			if (*iter % i != left)
+			long tempDiffer = abs(nums[i] - nums[j]);
+			
+			if (tempDiffer < min && tempDiffer != 0)
 			{
-				isM = false;
-				break;
+				min = tempDiffer;
+			}
+
+			if (tempDiffer > max)
+			{
+				max = tempDiffer;
 			}
 		}
+	}
 
-		if (isM)
+	long result = gcd(max, min);
+
+	if (min == 1000000001)
+	{
+		result = nums[0];
+	}
+
+	std::vector<long> resultList;
+
+	for (long i = 2; i <= sqrt(result); ++i)
+	{
+		if (result % i == 0)
 		{
-			result[i] = true;
-			result[nums[0] / i] = true;
+			resultList.push_back(i);
+			if (i != (result / i))
+			{
+				resultList.push_back(result/i);
+			}
 		}
 	}
 
-	for (int i = 0; i < 500000001; ++i)
+	resultList.push_back(result);
+
+	std::sort(resultList.begin(), resultList.end());
+
+	for (int i = 0; i < resultList.size(); ++i)
 	{
-		if (result[i] == true)
-		{
-			printf("%d ", i);
-		}
+		printf("%d ", resultList[i]);
 	}
 
 	return 0;

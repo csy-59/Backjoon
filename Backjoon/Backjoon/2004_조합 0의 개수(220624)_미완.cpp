@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-unsigned long countN(unsigned long num, int n)
+long long countN(long num, int n)
 {
-	int result = 0;
+	long long result = 0;
 
-	unsigned long temp = n;
+	long long temp = n;
 	while (temp <= num)
 	{
 		result += num / temp;
@@ -12,15 +12,6 @@ unsigned long countN(unsigned long num, int n)
 	}
 
 	return result;
-}
-
-unsigned long countTen(unsigned long two, unsigned long five)
-{
-	if (two > five)
-	{
-		return five;
-	}
-	return two;
 }
 
 int main()
@@ -33,11 +24,11 @@ int main()
 		m = n - m;
 	}
 
-	unsigned long nmZero = countTen(countN(n - m, 2), countN(n - m, 5));
-	unsigned long mZero = countTen(countN(m, 2), countN(m, 5));
-	unsigned long nZero = countTen(countN(n, 2), countN(n, 5));
+	long long nmZero = countN(n - m, 5);
+	long long mZero = countN(m, 5);
+	long long nZero = countN(n, 5);
 
-	printf("%ld", nZero - (mZero + nmZero));
+	printf("%ld", nZero - mZero - nmZero);
 
 	return 0;
 }

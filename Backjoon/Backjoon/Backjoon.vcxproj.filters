@@ -78,9 +78,6 @@
     <ClCompile Include="14425 문자열 집합%28220622%29_미완.cpp">
       <Filter>소스 파일\미완</Filter>
     </ClCompile>
-    <ClCompile Include="2981_검문%28220623%29_미완.cpp">
-      <Filter>소스 파일\미완</Filter>
-    </ClCompile>
     <ClCompile Include="3036_링(220623).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -109,6 +106,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1764_듣보잡%28220624%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2981_검문%28220627%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="24479_알고리즘수업-깊이 우선 탐색1(220628).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="24444_알고리즘 수업-너비 우선 탐색1(220628).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1300_K번째 수%28220628%29_미완.cpp">
+      <Filter>소스 파일\미완</Filter>
+    </ClCompile>
+    <ClCompile Include="24480_알고리즘 수업-깊이 우선 탐색 2%28220628%29_미완.cpp">
+      <Filter>소스 파일\미완</Filter>
+    </ClCompile>
+    <ClCompile Include="24445_알고리즘 수업-너비 우선 탐색 2%28220628%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
