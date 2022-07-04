@@ -147,6 +147,33 @@
     <ClCompile Include="1107_리모컨%28220630%29_미완.cpp">
       <Filter>소스 파일\미완</Filter>
     </ClCompile>
+    <ClCompile Include="1389_케빈 베이컨의 6단계 법칙%28220704%29%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16928_뱀과 사다리 게임(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1780_종이의 개수(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2630_색종이 만들기(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9461_파도반 수업(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3197_백조의 호수(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11659_구간 합 구하기 4(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2644_촌수계산(220704).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5014_스타트링크(220704)-.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
