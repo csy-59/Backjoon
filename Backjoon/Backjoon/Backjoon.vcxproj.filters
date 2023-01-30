@@ -162,7 +162,7 @@
     <ClCompile Include="9461_파도반 수업(220704).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="3197_백조의 호수(220704).cpp">
+    <ClCompile Include="3197_백조의 호수%28230129%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="11659_구간 합 구하기 4(220704).cpp">
@@ -187,6 +187,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="25501_재귀의 귀재(230117.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1238_파티(230129).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
